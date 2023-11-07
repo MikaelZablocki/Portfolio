@@ -1,0 +1,140 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Header start here */
+
+header {
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: azure;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 25px;
+    background-color: rgb(255, 126, 190);
+   border-bottom: 2px rgba(0, 0, 0, 0.26) solid;
+   border-top: 2px rgba(0, 0, 0, 0.26) solid;
+}
+
+header ul li {
+    background-color: rgba(255, 255, 255, 0.11);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: azure;
+    border: none;
+   text-align: center;
+   display: inline-block;
+    padding: 5px;
+}
+
+header ul li a:hover {
+    background-color:rgba(255, 255, 255, 0.212) ;
+}
+
+/* Main starter her */
+
+article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+article ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+img {
+    width: 250px;
+    border: 5px rgba(255, 105, 180, 0.26) solid ;
+    border-radius: 100%;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.overtext {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: hotpink;
+    margin-top: 7vh;
+    padding-bottom: 4vh;
+    text-align: center;
+    border-top:  2px rgba(0, 0, 0, 0.26) solid;
+}
+
+footer h2 {
+    color: azure;
+    padding-top: 3vh;
+}
+
+
+@media screen and (max-width: 500px) {
+
+.container {
+    display: block;
+}
+
+    img {
+        width: 70%;
+        margin-top: 5rem;
+    }
+
+    article {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header ul {
+        font-size: 20px;
+    }
+
+    header ul li {
+        background-color: rgba(255, 255, 255, 0.11);
+       margin-right: 10px;
+       margin-left: 10px;
+    }
+}
